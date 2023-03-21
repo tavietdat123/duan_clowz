@@ -1,0 +1,116 @@
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        text-align: center;
+    }
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+.social_media {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 129px;
+    }
+    img + img {
+        margin-left: 15px;
+    }
+}
+.form {
+    margin-top: 10px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+        label {
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #a94442;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+    }
+}
+.input {
+    background: #f7f7f7;
+    height: 50px;
+    padding: 0 15px;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+}
+.input.error {
+    border-color: rgb(185, 74, 72);
+    border-radius: 4px;
+    color: red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.input.success {
+    &:focus {
+        border-color: #2b542c;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+        border-radius: 4px;
+    }
+}
+.btn {
+    background-color: #1c1c1c;
+    color: var(--white);
+    min-width: 260px;
+    height: 50px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+    padding: 14px 28px;
+    line-height: normal;
+    border: 1px solid #1c1c1c;
+    text-transform: uppercase;
+    &:hover {
+        color: #1c1c1c;
+
+        background-color: transparent;
+    }
+}
+.text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .text_link {
+        margin-top: 15px;
+        color: #dc4e3f;
+        display: block;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 0;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        display: flex;
+        a {
+            color: #dc4e3f;
+        }
+    }
+}

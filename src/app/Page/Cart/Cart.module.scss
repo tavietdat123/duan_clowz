@@ -1,0 +1,157 @@
+.title {
+    margin-top: 30px;
+    font-size: 26px;
+    line-height: 28px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2.4px;
+    color: #1c1c1c;
+    span {
+        font-size: 14px;
+        text-transform: none;
+        font-weight: 400;
+    }
+}
+
+.img_item {
+    img {
+        max-height: 180px;
+    }
+}
+.cart_item {
+    background-color: transparent;
+    padding: 15px 0;
+    margin: 0;
+}
+.box_info {
+    width: 350px;
+    padding-right: 10px;
+    padding-left: 10px;
+    p {
+        &:first-child {
+            font-size: 14px;
+            margin-bottom: 7px;
+            line-height: 20px;
+            font-weight: 500;
+            padding-top: 0;
+        }
+        &:last-child {
+            border: 0;
+            color: #dc4e3f;
+            font-size: 13px;
+            position: static;
+            padding: 0;
+            line-height: 1.1;
+            cursor: pointer;
+            font-weight: 500;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+.info_product {
+    display: flex;
+    align-items: center;
+}
+.price {
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    padding-top: 0;
+    color: #dc4e3f;
+    width: 110px;
+    padding-right: 10px;
+}
+.quantity {
+    display: flex;
+    justify-content: flex-end;
+    width: 120px;
+    button {
+        border-radius: 0 3px 3px 0;
+        border: 1px solid #e5e5e5;
+        border-color: #e5e5e5;
+        color: #999;
+        line-height: 20px;
+        padding: 3px 9px;
+        margin: 0;
+        width: 28px;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    input {
+        height: 28px;
+        padding: 0 5px;
+        text-align: center;
+        border-radius: 0;
+        width: 35px;
+        min-height: 28px;
+        border: 1px solid #e5e5e5;
+        background-color: #fff;
+    }
+}
+
+.cart_item + .cart_item {
+    border-top: 1px solid #f5f5f5;
+}
+.provisional {
+    padding: 17px 0 21px 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    span {
+        font-weight: 500;
+        color: #1c1c1c;
+    }
+}
+.total {
+    border-top: 1px solid #f4f4f4;
+    display: flex;
+    padding: 17px 0 21px 0;
+    justify-content: space-between;
+    span {
+        font-weight: 500;
+        color: #1c1c1c;
+    }
+    strong {
+        color: #dc4e3f;
+        font-size: 22px;
+    }
+}
+.btn_black,
+.btn_white {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.42857;
+    user-select: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 50px;
+    border: 1px solid #1c1c1c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn_black {
+    background-color: #1c1c1c;
+    color: var(--white);
+    &:hover {
+        background-color: var(--white);
+        color: #1c1c1c;
+        transition: all linear 0.2s;
+    }
+}
+.btn_white {
+    background-color: var(--white);
+    color: #1c1c1c;
+    &:hover {
+        background-color: #1c1c1c;
+        color: var(--white);
+        transition: all linear 0.2s;
+    }
+}
