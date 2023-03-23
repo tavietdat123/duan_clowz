@@ -25,7 +25,7 @@ const list_head = [
     },
     {
         title: 'ALL SALE',
-        path: '/',
+        path: `/all-sale`,
     },
     {
         title: 'SẢN PHẨM',
@@ -141,11 +141,11 @@ const list_head = [
     },
     {
         title: 'BLOG',
-        path: '/',
+        path: config.routesConfig.blog,
     },
     {
         title: 'LIÊN HỆ',
-        path: '/',
+        path: config.routesConfig.contact,
     },
 ];
 function Header({ path }) {

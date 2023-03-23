@@ -5,5 +5,8 @@ const routesConfig = {
     login: '/login',
     signin: '/signin',
     cart: '/cart',
+    contact: '/contact',
+    blog: '/blog',
+    product: '/:pageName',
 };
 export default routesConfig;
